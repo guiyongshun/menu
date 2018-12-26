@@ -103,6 +103,7 @@ export class SubPopupMenu extends React.Component {
     manualRef: PropTypes.func,
     itemIcon: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
     expandIcon: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
+    forceSubMenuUpdate: PropTypes.bool,
   };
 
   static defaultProps = {
@@ -115,6 +116,7 @@ export class SubPopupMenu extends React.Component {
     focusable: true,
     style: {},
     manualRef: noop,
+    forceSubMenuUpdate: false,
   };
 
   constructor(props) {
@@ -137,9 +139,9 @@ export class SubPopupMenu extends React.Component {
     }
   }
 
-  //shouldComponentUpdate(nextProps) {
-  //  return this.props.visible || nextProps.visible;
-  //}
+  shouldComponentUpdate(nextProps) {
+    return this.props.forceSubMenuUpdate || this.props.visible || nextProps.visible;
+  }
 
   componentDidUpdate(prevProps) {
     const props = this.props;
