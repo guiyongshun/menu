@@ -22,6 +22,7 @@ class Menu extends React.Component {
     subMenuOpenDelay: PropTypes.number,
     subMenuCloseDelay: PropTypes.number,
     forceSubMenuRender: PropTypes.bool,
+    forceSubMenuUpdate: PropTypes.bool,
     triggerSubMenuAction: PropTypes.string,
     level: PropTypes.number,
     selectable: PropTypes.bool,

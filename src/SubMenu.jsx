@@ -348,7 +348,6 @@ export class SubMenu extends React.Component {
     const baseProps = {
       mode: props.mode === 'horizontal' ? 'vertical' : props.mode,
       visible: this.props.isOpen,
-      forceSubMenuUpdate: this.props.forceSubMenuUpdate,
       level: props.level + 1,
       inlineIndent: props.inlineIndent,
       focusable: false,
@@ -366,6 +365,7 @@ export class SubMenu extends React.Component {
       parentMenu: this,
       subMenuCloseDelay: props.subMenuCloseDelay,
       forceSubMenuRender: props.forceSubMenuRender,
+      forceSubMenuUpdate: props.forceSubMenuUpdate,
       triggerSubMenuAction: props.triggerSubMenuAction,
       builtinPlacements: props.builtinPlacements,
       defaultActiveFirst: props.store.getState()

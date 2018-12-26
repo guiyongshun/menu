@@ -181,6 +181,12 @@ ReactDOM.render(<Menu>
             <td>whether to render submenu even if it is not visible</td>
         </tr>
         <tr>
+            <td>forceSubMenuUpdate</td>
+            <td>Boolean</td>
+            <th>false</th>
+            <td>force to update submenu even if it is not visible</td>
+        </tr>
+        <tr>
             <td>getPopupContainer</td>
             <td>Function(menuDOMNode): HTMLElement</td>
             <th>() => document.body</th>

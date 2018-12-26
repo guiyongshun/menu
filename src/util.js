@@ -65,6 +65,7 @@ export const menuAllProps = [
   'subMenuOpenDelay',
   'subMenuCloseDelay',
   'forceSubMenuRender',
+  'forceSubMenuUpdate',
   'triggerSubMenuAction',
   'level',
   'selectable',
