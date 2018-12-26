@@ -137,9 +137,9 @@ export class SubPopupMenu extends React.Component {
     }
   }
 
-  shouldComponentUpdate(nextProps) {
-    return this.props.visible || nextProps.visible;
-  }
+  //shouldComponentUpdate(nextProps) {
+  //  return this.props.visible || nextProps.visible;
+  //}
 
   componentDidUpdate(prevProps) {
     const props = this.props;
