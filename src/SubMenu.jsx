@@ -60,6 +60,7 @@ export class SubMenu extends React.Component {
     onTitleClick: PropTypes.func,
     popupOffset: PropTypes.array,
     isOpen: PropTypes.bool,
+    forceSubMenuUpdate: PropTypes.bool,
     store: PropTypes.object,
     mode: PropTypes.oneOf(['horizontal', 'vertical', 'vertical-left', 'vertical-right', 'inline']),
     manualRef: PropTypes.func,
